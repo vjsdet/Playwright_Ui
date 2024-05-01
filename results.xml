@@ -1,0 +1,87 @@
+<testsuites id="" name="" tests="3" failures="2" skipped="0" errors="0" time="117.07277199998498">
+<testsuite name="visual.spec.ts" timestamp="2023-07-19T12:48:13.984Z" hostname="Chromium" tests="3" failures="2" skipped="0" time="111.456" errors="0">
+<testcase name="Visual Regression Testing Demo › TC001 - verify home page canvas, verify hamburger menu content, Verify Play screen canvas - PASS scenario" classname="visual.spec.ts" time="38.63">
+</testcase>
+<testcase name="Visual Regression Testing Demo › TC002 - verify home page canvas, es canvas against en - FAIL scenario" classname="visual.spec.ts" time="37.395">
+<failure message="visual.spec.ts:58:8 TC002 - verify home page canvas, es canvas against en - FAIL scenario" type="FAILURE">
+<![CDATA[  [Chromium] › visual.spec.ts:58:8 › Visual Regression Testing Demo › TC002 - verify home page canvas, es canvas against en - FAIL scenario 
+
+    Error: Screenshot comparison failed:
+
+      6742 pixels (ratio 0.01 of all image pixels) are different.
+
+    Expected: C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-expected.png
+    Received: C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-actual.png
+        Diff: C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-diff.png
+
+      71 |     
+      72 |     // verify Home page canvas image
+    > 73 |     expect(await pageElement!.screenshot()).toMatchSnapshot('1Canvas-game-page-canvas.png',{maxDiffPixels:4500});
+         |                                             ^
+      74 |
+      75 |     
+      76 |   })
+
+        at C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\tests\visual\visual.spec.ts:73:45
+
+    attachment #1: 1Canvas-game-page-canvas-expected.png (image/png) ───────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-expected.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: 1Canvas-game-page-canvas-actual.png (image/png) ─────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: 1Canvas-game-page-canvas-diff.png (image/png) ───────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-expected.png]]
+
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-actual.png]]
+
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\1Canvas-game-page-canvas-diff.png]]
+
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC002----f5b49-age-canvas-es-canvas-against-en---FAIL-scenario-Chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Visual Regression Testing Demo › TC003 - verify hamburger menu content - es data against en - FAIL scenario" classname="visual.spec.ts" time="35.431">
+<failure message="visual.spec.ts:79:8 TC003 - verify hamburger menu content - es data against en - FAIL scenario" type="FAILURE">
+<![CDATA[  [Chromium] › visual.spec.ts:79:8 › Visual Regression Testing Demo › TC003 - verify hamburger menu content - es data against en - FAIL scenario 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "GAME RULES"
+    Received: "REGLAS DEL JUEGO"
+
+      108 |         // Verify expanded Hamburger menu content
+      109 |     expect(text1!).toBe("Book of Amduat™");
+    > 110 |     expect(text2!).toBe("GAME RULES");
+          |                    ^
+      111 |   
+      112 |     // click on cross button
+      113 |     await page.locator('#panel #close_button').click();
+
+        at C:\Users\Jhaman  das sindhi\Desktop\playwright_Automation\playwright-visual\visual-playwright\tests\visual\visual.spec.ts:110:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\visual-Visual-Regression-Testing-Demo-TC003----a57ed-nu-content---es-data-against-en---FAIL-scenario-Chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\visual-Visual-Regression-Testing-Demo-TC003----a57ed-nu-content---es-data-against-en---FAIL-scenario-Chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
